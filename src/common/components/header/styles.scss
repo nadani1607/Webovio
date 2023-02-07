@@ -1,14 +1,18 @@
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
+  right: 0;
+  left: 0;
   z-index: 100;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.03);
-  background: rgba(#ffffff, 0.98);
+  background: transparent;
+  transition: 0.3s;
 
   &.fixed {
+    background: #798462;
+
     .header__wrapper,
-    .header__link,
-    {
+    .header__link {
       min-height: 44px;
     }
 
@@ -79,7 +83,7 @@
     align-items: center;
     padding: 7px 25px;
     min-height: 64px;
-    color: $text-color;
+    color: $white;
     font-size: 1.6rem;
     cursor: pointer;
     transition: all 0.3s;

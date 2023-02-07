@@ -1,7 +1,7 @@
 {
   "name": "gulp-boilerplate",
   "version": "1.0.0",
-  "description": "",
+  "description": "```\r npm start\r ```",
   "main": "gulpfile.js",
   "scripts": {
     "start": "gulp",
