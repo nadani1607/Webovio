@@ -1,8 +1,105 @@
-footer {
-  color: red;
-  font-size: 30px;
+.footer {
+  background: url("../images/footer/footer-bcg.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  min-height: 100vh;
+  width: 100%;
+  margin-top: 310px;
 
-  @include media-breakpoint-down(md) {
-    color: green;
+  &__row {
+    display: flex;
+    margin-top: 280px;
+    margin-bottom: 52px;
+  }
+
+  &__item+&__item {
+    margin-left: 128px;
+  }
+
+  &__box {
+    display: flex;
+    margin-top: 60px;
+  }
+
+  &__items {
+    width: 60%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 60px;
+  }
+
+  &__paragraph {
+    font-style: normal;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: $green;
+  }
+
+  &__notice {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 40px;
+    color: $white;
+  }
+
+  &__items {
+    display: flex;
+  }
+
+  &__title {
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 38px;
+    text-transform: uppercase;
+    color: $white;
+    margin-bottom: 21px;
+  }
+
+  &__list {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 40px;
+    color: $green;
+  }
+
+  &__desc {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.6;
+    color: $green;
+  }
+
+  &__email {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 38px;
+    color: $white;
+    margin-top: 23px;
+  }
+
+  &__company {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 25px;
+  }
+
+  &__info {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 21px;
+    color: $green;
+  }
+
+  hr {
+    border: 0.5px solid $green;
+  }
+
+  &__contacts {
+    margin-left: 110px;
+    max-width: 322px;
   }
 }
