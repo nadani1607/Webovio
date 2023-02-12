@@ -1,12 +1,12 @@
 .product {
   padding-top: 50px;
+  margin-top: 125px;
 
   &__wrapper {
     position: relative;
   }
 
   &__title {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 46px;
@@ -25,7 +25,6 @@
   }
 
   &__paragraph {
-    font-style: normal;
     font-weight: 500;
     font-size: 24px;
     line-height: 34px;
@@ -34,8 +33,6 @@
   }
 
   &__desc {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 26px;
     color: rgba(33, 56, 66, 0.6);
@@ -43,17 +40,15 @@
   }
 
   &__link {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
     color: #D4D6D4;
     margin-top: 30px;
-  }
 
-  &__link:hover {
-    color: #FFD723;
+    &:hover {
+      color: #FFD723;//
+    }
   }
 
   &__row {
@@ -68,7 +63,6 @@
   }
 
   &__notice {
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;

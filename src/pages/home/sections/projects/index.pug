@@ -1,0 +1,27 @@
+mixin item(args={})
+  .projects__item
+    .projects__content
+      img(src=args.img, alt="project")
+      .projects__review
+        p.projects__opinion= args.opinion
+        .projects__person
+          img(src=args.avatar, alt="avatar")
+          .projects__card
+            p.projects__name= args.name
+            p.projects__prof= args.prof
+    .projects__info
+      p.projects__paragraph= args.paragraph
+      p.projects__text= args.text1
+      p.projects__text= args.text2
+      a.projects__link(href="#") See Case Study
+
+section.projects
+  .container
+    .projects__wrapper
+      .projects__preview
+        p.projects__title We Have Some Awesome Projects.
+        p.projects__desc Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s.
+      .projects__items
+        each el in products.items
+          +item(el)
+      

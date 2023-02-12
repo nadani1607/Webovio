@@ -1,5 +1,4 @@
 .strategy {
-  
 
   &__wrapper {
     position: relative;
@@ -35,15 +34,12 @@
   }
 
   &__paragraph {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: $dark;
   }
 
   &__main {
-    font-style: normal;
     font-weight: 700;
     font-size: 36px;
     line-height: 46px;
@@ -52,8 +48,6 @@
   }
 
   &__desc {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: $dark;
@@ -61,8 +55,6 @@
   }
 
   &__link {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
@@ -72,7 +64,6 @@
 
   &__text {
     font-style: italic;
-    font-weight: 400;
     font-size: 24px;
     line-height: 40px;
     color: $dark;
@@ -91,7 +82,6 @@
   }
 
   &__name {
-    font-style: normal;
     font-weight: 700;
     font-size: 22px;
     line-height: 33px;
@@ -99,8 +89,6 @@
   }
 
   &__prof {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 24px;
     color: $dark;

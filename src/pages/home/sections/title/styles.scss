@@ -13,8 +13,6 @@
   }
 
   &__paragraph {
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 21px;
     color: $white;
@@ -22,7 +20,6 @@
   }
 
   &__text {
-    font-style: normal;
     font-weight: 700;
     font-size: 60px;
     line-height: 74px;
@@ -31,8 +28,6 @@
   }
 
   &__notice {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: $white;
@@ -40,17 +35,14 @@
   }
 
   &__link {
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
     line-height: 18px;
     text-decoration-line: underline;
     color: $link-color;
     margin-top: 45px;
-  }
 
-  &__link:hover {
-    color: $white;
-    cursor: pointer;
+    &:hover {
+      color: $white;
+    }
   }
 }
