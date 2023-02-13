@@ -1,3 +1,10 @@
+mixin listItem(args={})
+  .footer__column
+    p.footer__title= args.title
+    ul
+      each link in args.links
+        li.footer__list= link
+
 footer.footer
   .container
     .footer__wrapper
@@ -11,28 +18,8 @@ footer.footer
       hr
       .footer__box
         .footer__items
-          .footer__column
-            p.footer__title Services
-            ul
-              li.footer__list Strategy Design
-              li.footer__list Product Design
-              li.footer__list Content Strategy
-              li.footer__list Brand Strategy
-              li.footer__list Development
-          .footer__column
-            p.footer__title Help And Advice
-            ul
-              li.footer__list How it works
-              li.footer__list Contact Support
-              li.footer__list Privacy Policy
-              li.footer__list FAQ
-          .footer__column
-            p.footer__title Company
-            ul
-              li.footer__list About
-              li.footer__list Blog
-              li.footer__list Contact
-              li.footer__list Jobs
+          each item in footer.items
+            +listItem(item)
         .footer__contacts
           p.footer__title Get in Touch
           p.footer__desc Feel free to get in touch with us vai email

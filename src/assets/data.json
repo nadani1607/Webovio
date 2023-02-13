@@ -19,8 +19,8 @@
       }
     ]
   },
-  "products": {
-        "items": [
+  "projects": {
+    "items": [
       {
         "img": "images/projects/project-1.png",
         "avatar": "images/projects/avatar-1.png",
@@ -52,5 +52,59 @@
         "text2": "If there’s at least one fact you didn’t know before, imagine the difference it might make."
       }
     ]
+  },
+  "footer": {
+    "items": [
+      {
+        "title": "Services",
+        "links": [
+          "Strategy Design",
+          "Product Design",
+          "Content Strategy",
+          "Brand Strategy",
+          "Development"
+        ]
+      },
+      {
+        "title": "Help And Advice",
+        "links": [
+          "How it works",
+          "Contact Support",
+          "Privacy Policy",
+          "FAQ"
+        ]
+      },
+      {
+        "title": "Company",
+        "links": [
+          "About",
+          "Blog",
+          "Contact",
+          "Jobs"
+        ]
+      }
+      
+    ]
+  },
+  "product": {
+    "items": [
+      {
+        "paragraph": "Product Design Sprint",
+        "desc": "A five-day workshop that will help you answer crucial business questions"        
+      },
+      {
+        "paragraph": "Scoping Session",
+        "desc": "A workshop aimed at shaping your business idea, answering questions regarding project planning"
+      },
+      {
+        "paragraph": "UX Review",
+        "desc": "An evaluation which will help you radically improve your product."
+      },
+      {
+        "paragraph": "Code Review",
+        "desc": "Do you know what one of the key secrets of success is what makes people successful in business"
+      }   
+    ]
   }
+
 }

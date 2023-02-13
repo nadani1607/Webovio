@@ -25,6 +25,10 @@
 
   &__item+&__item {
     margin-left: 128px;
+
+    @include media-breakpoint-down(xs) {
+      margin: 0 auto;
+    }
   }
 
   &__box {
@@ -45,6 +49,10 @@
     @include media-breakpoint-down(sm) {
       width: 100%;
       justify-content: space-around;
+    }
+
+    @include media-breakpoint-down(xs) {
+      justify-content: flex-start;
     }
   }
 
@@ -88,6 +96,10 @@
 
   &__column {
     width: 50%;
+
+    @include media-breakpoint-down(xs) {
+      margin-top: 20px;
+    }
   }
 
   &__title {
@@ -135,16 +147,7 @@
 
     @include media-breakpoint-down(sm) {
       margin-top: 15px;
-    }
-
-    &__logo {
-
-      @include media-breakpoint-down(sm) {
-        max-width: 20%;
-      }
-    }
-
-    
+    } 
   }
 
   &__company {
@@ -180,7 +183,13 @@
     @include media-breakpoint-down(sm) {
       text-align: center;
       margin: 0 auto;
+    } 
+  }
+
+  &__logo {
+
+    @include media-breakpoint-down(sm) {
+      max-width: 50%;
     }
-    
   }
 }
