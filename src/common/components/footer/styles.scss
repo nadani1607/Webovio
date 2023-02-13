@@ -11,6 +11,16 @@
     display: flex;
     margin-top: 280px;
     margin-bottom: 52px;
+
+    @include media-breakpoint-down(sm) {
+      justify-content: center;
+      text-align: center;
+      margin-top: 150px;
+    }
+
+    @include media-breakpoint-down(xs) {
+      flex-direction: column;
+    } 
   }
 
   &__item+&__item {
@@ -20,6 +30,10 @@
   &__box {
     display: flex;
     margin-top: 60px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+    }
   }
 
   &__items {
@@ -27,36 +41,67 @@
     display: flex;
     justify-content: space-between;
     margin-bottom: 60px;
+
+    @include media-breakpoint-down(sm) {
+      width: 100%;
+      justify-content: space-around;
+    }
   }
 
   &__paragraph {
-    font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 2.5;
     color: $green;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-down(xs) {
+     text-align: center; 
+    }
   }
 
   &__notice {
-    font-style: normal;
     font-weight: 700;
     font-size: 16px;
-    line-height: 40px;
+    line-height: 2.5;
     color: $white;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-down(xs) {
+     text-align: center; 
+    }
   }
 
   &__items {
     display: flex;
+
+    @include media-breakpoint-down(xs) {
+     flex-wrap: wrap; 
+    }
+  }
+
+  &__column {
+    width: 50%;
   }
 
   &__title {
     font-style: normal;
     font-weight: 600;
     font-size: 16px;
-    line-height: 38px;
+    line-height: 2.4;
     text-transform: uppercase;
     color: $white;
     margin-bottom: 21px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
   }
 
   &__list {
@@ -64,6 +109,10 @@
     font-size: 16px;
     line-height: 40px;
     color: $green;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
   }
 
   &__desc {
@@ -79,12 +128,34 @@
     line-height: 38px;
     color: $white;
     margin-top: 23px;
+
+    @include media-breakpoint-down(md) {
+      font-size: 15px;
+    }
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 15px;
+    }
+
+    &__logo {
+
+      @include media-breakpoint-down(sm) {
+        max-width: 20%;
+      }
+    }
+
+    
   }
 
   &__company {
     display: flex;
     justify-content: space-between;
     margin-top: 25px;
+
+    @include media-breakpoint-down(sm) {
+      flex-direction: column;
+      align-items: center;
+    }
   }
 
   &__info {
@@ -92,6 +163,10 @@
     font-size: 14px;
     line-height: 21px;
     color: $green;
+
+    @include media-breakpoint-down(sm) {
+      margin-top: 25px;
+    }
   }
 
   hr {
@@ -101,5 +176,11 @@
   &__contacts {
     margin-left: 110px;
     max-width: 322px;
+
+    @include media-breakpoint-down(sm) {
+      text-align: center;
+      margin: 0 auto;
+    }
+    
   }
 }

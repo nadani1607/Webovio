@@ -1,7 +1,7 @@
 mixin item(args={})
   .projects__item
     .projects__content
-      img(src=args.img, alt="project")
+      img.projects__pic(src=args.img, alt="project")
       .projects__review
         p.projects__opinion= args.opinion
         .projects__person
