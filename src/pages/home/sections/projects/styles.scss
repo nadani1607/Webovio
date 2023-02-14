@@ -3,6 +3,7 @@
   &__preview {
     display: flex;
     align-items: center;
+    flex-direction: column;
 
     @include media-breakpoint-down(xs) {
       flex-direction: column;
@@ -14,8 +15,7 @@
     font-size: 36px;
     line-height: 1.5;
     color: $dark;
-    max-width: 350px;
-    margin-right: 133px;
+    margin: 0 auto;
 
     @include media-breakpoint-down(md) {
       font-size: 28px;
@@ -23,7 +23,6 @@
 
     @include media-breakpoint-down(sm) {
       font-size: 20px;
-      margin-right: 50px;
     }
 
     @include media-breakpoint-down(xs) {
@@ -37,7 +36,10 @@
     font-size: 16px;
     line-height: 1.6;
     color: $dark;
-    max-width: 518px;
+    max-width: 1000px;
+    margin: 20px auto;
+    text-align: center;
+    
 
     @include media-breakpoint-down(sm) {
       width: 60%;
@@ -51,11 +53,11 @@
 
   &__item {
     display: flex;
-    margin-top: 110px;
+    margin-top: 90px;
     justify-content: space-between;
     align-items: center;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       flex-direction: column;
       width: 100%;
     }
@@ -63,7 +65,7 @@
     &:nth-child(even) {
       flex-direction: row-reverse;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         flex-direction: column;
       }
 
@@ -99,7 +101,7 @@
     & + & {
       margin-top: 180px;
 
-      @include media-breakpoint-down(sm) {
+      @include media-breakpoint-down(md) {
         margin-top: 100px;
       }
     } 
@@ -108,8 +110,10 @@
   &__info {
     width: 35%;
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       width: 100%;
+      margin-top: 50px;
+      text-align: center;
     }
   }
 
@@ -126,7 +130,7 @@
 
     @include media-breakpoint-down(sm) {
      text-align: center;
-     margin-top: 120px;
+     margin-top: 50px;
     }
   }
 
@@ -147,10 +151,6 @@
     text-decoration-line: underline;
     color: #D4D6D4;
     margin-top: 50px;
-
-    @include media-breakpoint-down(sm) {
-      
-    }
   }
 
   &__content {

@@ -32,7 +32,7 @@
 
   &__logo {
 
-    @include media-breakpoint-down(sm) {
+    @include media-breakpoint-down(md) {
       max-width: 15%;
     }    
 
@@ -169,6 +169,10 @@
     border: 1px solid #D4D6D4;
     margin: 150px auto;
     width: 100%;
+
+    @include media-breakpoint-down(md) {
+      margin: 50px auto;
+    }
   }
 
 }
